@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+  /* Global styles */
+
+body {
+	background-color: #FFCCE6;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.style3 {
+	font-family: Algerian, "Century Gothic";
+	font-size: 36mm;
+	color: #482400;
+}
+.style4 {color: #482400}
+.style6 {font-size: 14pt}
+.style12 {font-size: 16pt; font-family: Georgia, "Times New Roman", Times, serif; }
+.style7 {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18pt;
+}
+.style5 {	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+.style8 {font-size: 16pt}
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+section {
+    padding: 40px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+}
+#menu {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex; /* Add flex display */
+            justify-content: center; /* Center-align the menu items horizontally */
+        }
+
+        #menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        /* CSS styles for the content sections */
+        .content {
+            display: none;
+            padding: 20px;
+        }
+
+        .content.visible {
+            display: block;
+        }
+#portfolio {
+        font-family: "Arial", sans-serif;
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    .project {
+        width: 300px;
+        margin-bottom: 40px;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        color: #333333;
+        margin-bottom: 10px;
+    }
+
+    a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    a:hover {
+        background-color: #45a049;
+    }
+#contact {
+        font-family: "Arial", sans-serif;
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #333333;
+        margin-bottom: 5px;
+    }
+        /* Add your CSS styles here */
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const menuItems = document.querySelectorAll('#menu a');
+            const contentSections = document.querySelectorAll('.content');
+ // Add 'visible' class to the home page section by default
+ document.getElementById('home').classList.add('visible');
+
+            menuItems.forEach((menuItem, index) => {
+                menuItem.addEventListener('click', () => {
+                    // Remove 'visible' class from all content sections
+                    contentSections.forEach((section) => {
+                        section.classList.remove('visible');
+                    });
+
+                    // Add 'visible' class to the corresponding content section
+                    contentSections[index +1].classList.add('visible');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+    </header>
+            <div id="menu">
+           
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">experience</a></li>
+             <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#background">Background </a></li>
+            <li><a href="#contact">Contact</a></li>
+       </div>
+    <section id="home" class="content">
+<p class="style3"><span class="style3">MY STORY </span></p>
+
+<p align="right"><img src="C:\Users\pc\Pictures\PIC2.jpg"alt="Image" style="width: 50%; height: auto;" /></p>
+<p align="right">&nbsp;</p>
+<p align="right">&nbsp;</p>
+<p align="left">&nbsp;</p>
+<h2><span class="style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WELCOME TO THE LIFE OF KISH!!! </span>&nbsp;</h2>
+<h3>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style8">&nbsp;<span class="style5">IF YOU'VE MADE IT THIS FAR....</span></span></h3>
+<p>&nbsp;</p>
+
+<p align="center" class="style12">&nbsp;In this website you will get an insight on all matters Kish. So I'm Mercy Njoki Mwangi for those who don't know my full name.  Soooo get ready! get ready! get ready! I'm an engineer yasss, Programmer , UN secretariat, Artist for now. I'm here to give you a glimpse of my artistic mind.</p>
+<p align="left" class="style12">&nbsp;</p>
+<p align="left" class="style12">&nbsp;</p>
+<p align="left">&nbsp; </p>
+<p>&nbsp;</p>
+<p align="right">&nbsp;</p>
+<p class="style4">&nbsp;</p>
+<p align="left"><img src="C:\Users\pc\Pictures\PIC1.jpg"  alt="Image" style="width: 50%; height: auto;"/><p align="left><class="style6">baby Kish -- 2003</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p align="right"><img src="C:\Users\pc\Pictures\PIC1.1.jpg" alt="Image" style="width: 50%; height: auto;"/></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p align="right">Kish -- 2023</p>
+<p align="left">&nbsp;</p>
+        <!-- Add your content here -->
+    </section>
+    
+    <section id="about" class="content">
+        <style>
+           #about  {
+                background-color:  #FFCCE6;
+                margin-left: 75px;
+                margin-right: 75px;
+            }
+    
+            #about  .style1 {
+                font-family: scriptina, pacifico;
+                font-size: 18mm;
+            }
+    
+            #about  .style2 {
+                font-size: 18pt;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            #about  .style3 {
+                font-family: "Times New Roman", Times, serif;
+                font-size: 18pt;
+            }
+    
+            #about .style5 {
+                font-size: 18pt;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+            }
+        </style>
+        
+        <p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>;<em><strong><span class="style1">THE LIFE OF BABY KISH</span></strong></em></h3>
+<p><img src="C:\Users\pc\Pictures\about1.jpg" alt="Image" style="width: 50%; height: auto;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p align="right"><img src="C:\Users\pc\Pictures\about2.jpg" alt="Image" style="width: 50%; height: auto;"></p>
+<p>&nbsp;</p>
+<p class="style2">Believe me  when I tell you baby Kish had funnnnnnnnnnn. Well, life wasn&rsquo;t always rainbows  and roses or is it rainbow rose? did you know a rainbow rose is the symbol of  joy? I don&rsquo;t really like it because of the many colours but it is what it is. So,  as I was saying, baby Kish lived quite the life. We lived in Racecourse, which is really close to Junkie (Junction Mall). I did what every other child did and more. Rolling paper, lighting it up and pretending it was a  cigarette,done, playing police and robber till late at night yet I knew  very well my mum will beat the living daylights out of me when I went back home  later, done, stealing people&rsquo;s groceries, done, fighting with my older siblings, done. I was tiny yess, but I bullied the living hell out of my brothers. Playing &ldquo;ni  cha baba ni cha mama&rdquo;, I was the mama so I stole onions for the playgroup from home, you know, motherly duties. You get the picture yeah, I was a normal child basically.</p>
+<p><br>
+  <img src="C:\Users\pc\Pictures\about3.jpg" width="600" height="363"></p>
+<p align="justify" class="style3"> The preschool I went to was quite far, but I could walk there, and most kids in our court went there so we went together. Those who know me well know I&rsquo;m quite social at  times, well haikuanza juziii. So, there was a man I used to meet on my way back  home, regularly, and he was friendly. He would say hi and ask how my day went. I was in pre-unit so it wasn&rsquo;t a big deal. One fateful day, my classmate  went missing, causing conundrum, nationwide. Giving parents reason to be even more cautious. So, my aunt took me to school from then on and she met the  friendly man but, for her it was hate at first sight. Anyway, long story short  investigation into my classmate&rsquo;s disappearance and the turn of events that led to it started. Turns out he was kidnapped by, you  can guess who, the friendly man. &nbsp;The friendly  man turned out to be, get ready get readyyy, Onyancha, yesss the child cannibal. Yeah, nilishika maskio na nikajiambia, "Mercy Njoki, not every one is to be trusted!". I told  my brothers about it , but they never believed me. I think that&rsquo;s one of the most  memorable things that happened to me as a child.</p>
+<p align="justify"><br>
+
+<img src="https://cdn.homedit.com/wp-content/uploads/2016/08/Wind-chime-from-bottle-caps.jpg" width="540" height="380"></p>
+<p class="style5">As a child  we used to have bomb ass Christmas celebrations, like damn. Back then, Christmas was  a really big deal, still is but not in the same way, like we would get new clothes, sleepless nights decorating the house, using bottle caps though, and when we woke up, my dad would play Christmas carrols on dday. My favourite was the album by Boney M. Y&rsquo;all should just listen to it, especially &ldquo;the rivers of  Babylon &rdquo;!!. Anyways, you get the picture Christmas was the it thing. That&rsquo;s where I developed  my love for Chapati <>.</p>
+  <p class="style5"><br>
+    After moving  out from Race course, it wasn&rsquo;t really ever the same, but it was good enough.
+    </p>
+    
+</p>
+<p>&nbsp;</p>
+        <!-- Add your content here -->
+    </section>
+    <section id ="experience" class="content">
+        <style type="text/css">
+            <!--
+           #experience.style1 {
+                font-family: "Times New Roman", Times, serif;
+                font-size: 16pt;
+            }
+            #experience.style2 {
+                font-family: Georgia, "Times New Roman", Times, serif;
+                font-size: 16pt;
+                color: #CC3366;
+            }
+            #experience.style4 {font-family: "Times New Roman", Times, serif; font-size: 16pt; color: #800000; }
+#experience.style5 {font-size: 14pt; font-family: Verdana, Arial, Helvetica, sans-serif;}
+#experience.style6 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FF33CC;
+	font-size: 14pt;
+}
+#experience.body {
+	background-color: #FFFFFF;
+}
+#experience.style8 {color: #336699}
+#experience.style10 {color: #CC3399}
+#experience.style11 {
+	font-size: 16mm;
+	color: #CC66CC;
+}
+-->
+</style>
+<p class="style1">&nbsp;  </p>
+<p class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style11">&nbsp;TOUGH TIMES NEVER LAST </span></p>
+<p class="style1">&nbsp;</p>
+<p class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.40.24.jpeg" alt="image" style ="width :50%; height:auto;" /> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p align="right"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.41.13.jpeg" alt="image" style ="width :50%; height:auto;" /></p>
+<p align="right" class="style2">first day of school (2017) </p>
+<p class="style1">&nbsp;</p>
+<p class="style1">Aristotle once said that it is during our darkest moments  that we must focus on the light. Highschool was generally a dark place, I mean  it was a Catholic school what do you expect. I used to dread opening days. Anyway,  I had to focus on the small things that made me happy. I met my best friend  here. We were deskmates in F1 and let's just say the bond lasted. This girl has  been there for me in ways I can't even explain. I also met my second love MUN.  I remember in Form 1 I saw people wake up early, do their make up, dress up  and prep themselves to go attend MUN conferences. I loved the getting ready  part but I loved their debates more. I always admired their eloquency and  confidence , they were the It girls to me. In third term I auditioned to join the club and I remember my interview question was &ldquo; Convince  me an orange is colour purple and not orange.&rdquo; I mean we all know it&rsquo;s colour  orange so for a moment I was like what in the juju is this. But your girl  nailed it, I stated several facts that could make an orange seem purple but  confidence is what made me join the club. In Form 2 I joined the EAMUN secretariat  team and weh we attended a&nbsp; conference  whereby we were the only public school. It was kina Brookhouse, ISK, oshwal yeah you get the vibe and being part of the secretariat meant I could chase  people away from the conference if they misbehaved so mmh I definitely enjoyed the power. Form 2 I attended the Rome MUN yeahh in Rome purr. Basically MUN was a life changing experience for me. The topics we used to handle were quite  challenging and I mean who doesn&rsquo;t like one. I learnt more about global issues through MUN than through school work. I was the delegate of Fiji, Yemen,  Azerbaijan and South Africa,in different conferences though. I have handled  topics concerning women and children, security issues, refugees and environmental concerns. When I say MUN is my second love I mean it. After  highschool I became a trainer and a conference chair yeah clearly it&rsquo;s still  something I take part in up to date.</p>
+<p class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.41.55.jpeg" alt="image" style="width :50%; height :auto;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p align ="right"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.41.57.jpeg" alt="image" style="width :50%;height:auto;" /> </p>
+<p align="right" class="style1">Some of my outfits for MUN conferences</p>
+<p align="left" class="style1">&nbsp;</p>
+<p align="left" class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.42.37.jpeg"alt="Image" style="width: 50%; height: auto;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p align="right"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.43.08.jpeg"alt="Image" style="width: 50%; height: auto;" /> </p>
+<p align="right" class="style1">MUN was really fun ngl.</p><p align="left" class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.42.38.jpeg"alt="Image" style="width: 50%; height: auto;" /> </p>
+<p align="left" class="style4">T<span class="style5">his was at ROMEMUN and i was representing Fiji in UNHCR.I love this picture because we were on 'opposing teams' and I remember one of the girls saying, if Fiji is finding it hard to host refugees it should just close its doors but that would mean Fiji's refugees can't go anywhere in times of need. That day i represented Fiji as if I was the president, but it was fun</span>. </p>
+<p class="style1">&nbsp;</p>
+<p class="style1">Anyway what can I say about my highschool? It was  basically the normal highschool experience studying, learning about the catholic religion in depth, &ldquo; sisterhood&rdquo; not to mention the psychological torture from students and teachers. I really think 8-4-4 should be banned. The funny thing is I&rsquo;ve never heard anyone say they enjoyed their high school experience, ata wale wa international schools. High school was basically hell for almost everyone. The bullying in my highschool was on another level, and very personal. I don&rsquo;t mean people gossiping about you nah that&rsquo;s babyclass level. I mean finding sharp razor blades on your bed and in your shoes, finding used sanitary towels on your bed, waking up to an empty dorm locker and your shoes are missing. They made sure to hit where it hurts. If you were a holier than though girl you would find yourself in the &lsquo;lesbians &lsquo; list out of nowhere. People took time to make sure you suffered and the teachers didn&rsquo;t make life any easier. What do you mean you are punishing me because I carried a roll on or ketchup instead of tomato sauce, punishing me because I used a hairband and not a shoe lace like who cares about that mahn. Male teachers made sure life was completely miserable sasa. If they flirt with you and you reject them, aaaaah makosaaaaaaaa! That made you a target automatically. I honestly understand why people became depressed in school ju it was alot if you ask me. In Form 2 I did punishments for almost 2 weeks just because I was in a whatsapp group (Pb and Nairobi school). Talk about being petty.</p>
+<p class="style1">Anyway there were some fun moments too like the  annual inter-house, funkiessssssss, our Form 4 Christmas dinner and party. Some teachers were fun I&rsquo;ll admit that. I had good friends who made life in there bearable that&rsquo;s for sure. I remember my roommate used to come to school with chocolates and yoghurts and sell them and mmh nilimpa heshima. &nbsp;But the best thing about PB was the school chapel. I used to go pray almost every evening and when life became a bit tough I would just go and talk to God or just sit and read my Bible. I&rsquo;ve never experienced the peace I experienced in that chapel, I felt like I was in God&rsquo;s  presence and like He was next to me everytime I was there. My experience in that chapel seriously made me consider becoming a catholic, not only a catholic but a catholic sister.</p>
+<p class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.43.33.jpeg"alt="Image" style="width: 50%; height: auto;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p align="right"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.44.09.jpeg"alt="Image" style="width: 50%; height: auto;" /></p>
+<p class="style1">&nbsp; Considering the  Sisters used to reside in school you had to interact with them and they had some fun stories. I also loved their lifestyle, like it was simply singing, praying, reading the Bible and going to work. Such a simple yet  interesting life.</p>
+<p class="style1">In summary, it's safe to say High school was quite an experience. Here are some photos, enjoy! </p>
+<p class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.46.03.jpeg" alt="Image" style="width: 50%; height: auto;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p align="right"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.46.00.jpeg" alt="Image" style="width: 50%; height: auto;" /></p>
+<p class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.45.58.jpeg"  alt="Image" style="width: 50%; height: auto;" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p align="left" class="style1">&nbsp;</p><p align="right" class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.45.30.jpeg" alt="Image" style="width: 50%; height: auto;" /> <span align="center" class="style6">My bestfriend guyssssss. Been a bully since day 1.</span></p>
+<p align="left" class="style1">&nbsp;</p>
+<p align="left" class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.45.33.jpeg" alt="Image" style="width: 50%; height: auto;" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.45.37 (1).jpeg" alt="Image" style="width: 50%; height: auto;" /></p>
+<p align="left" class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-13 at 15.47.10.jpeg" alt="Image" style="width: 50%; height: auto;" /></p>
+<p align="left" class="style1">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style10">This was my little family w</span></span><span class="style10">hile in school. </span></p>
+<p align="left" class="style1">&nbsp; </p>
+    </section>
+    <section id="portfolio" class="content">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="C:\Users\pc\Pictures\project1.jpg">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex ultrices, sagittis mi et, rutrum nisl.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <img src="C:\Users\pc\Pictures\project3.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ex ultrices, sagittis mi et, rutrum nisl.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <img src="C:\Users\pc\Pictures\project2.jpg" alt="Project 3">
+            <h3>Project 3</h3>
+            <!--
+.style1 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+}
+body {
+	background-color: #FFCCCC;
+}
+.style2 {font-family: Georgia, "Times New Roman", Times, serif; font-size: 14pt; }
+-->
+</style>
+</head>
+
+<body>
+<p class="style2">I think it's been every girl's  dream to model. Well as a young girl I wasn't really invested in such because I  thought being a model meant being skinny and that means not eating and we all  know I love eating. My interest in modelling peaked while I was in high school  but at that time I wanted to be a runway model. Small girl, big dreams. But  with time I realised being a runway model is kind of hard in Kenya so I started  looking into commercial modelling and freelance modelling. So far I have worked  with a few brands but I'm still building my portfolio.</p>
+<p class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-22 at 14.16.11.jpeg" width="673" height="410" /></p>
+<p>This is the first project I've  ever done. It was an African themed  photoshoot.&nbsp; </p>
+<p><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-22 at 14.16.11 (1).jpeg" width="581" height="482" /></p>
+<p>This was the start of my modelling journey.</p>
+<p><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-22 at 14.16.12.jpeg"  /></p>
+<p>&nbsp;</p>
+<p><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-22 at 14.16.13.jpeg"  /></p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<p>This is my most recent shoot  working with a brand. </p>
+</body>
+        </div>
+        <!-- Add your content here -->
+    </section>
+    <section id="background" class="content">
+        <style type="text/css">
+            <!--
+             #background {
+                background-image: url(https://pin.it/1wttWhA);
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 50px;
+                background-color: #FFCCE6;
+              
+            }
+            #background .style1 {
+                font-size: 16pt;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #background .style2 {font-size: 16pt}
+            #background.style3 {
+                font-family: Georgia, "Times New Roman", Times, serif;
+                font-size: 16pt;
+            }
+            #background .style4 {
+                font-family: scriptina, pacifico;
+                font-size: 18mm;
+                color: #CC3333;
+            }
+            -->
+            </style>
+            <h2>Background</h2>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style4">MY BALD HEAD ERA </span></h2>
+<p>&nbsp;</p>
+<p align="center"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-05-30 at 18.09.47.jpeg" alt="Image" style="width: 50%; height: auto;"></p> &nbsp;&nbsp; I THINK THIS WAS IN CLASS 4 OR 5 --2012/2013 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p class="style1">&nbsp;</p>
+<p class="style1">Not going to lie, this was  one of the most adventurous points of my life. The calm and serene environment was definitely a plus. It was a new way of life, one I never experienced and  never thought I would, till I did. I spent roughly 5 years in this place and as much as I felt I was too young for this, it was good for character building for me to  be there at that point of my life because it shaped me to be who I am, to be tough and smart, street smart. Oh, I'm talking about my primary school  life . So I went to this boarding school,Rev.Ikingi primary school, in Chuka igambangombe when I was in class 4. You thought I travelled to a new  country or something , sorry . Studying in the rural areas is tough.  Eyyyy shukisha yawa. Our school was in the Mt. Kenya region, yeah like Mt. Kenya katikati.</p>
+<p class="style1"> We were in the middle of a forest,I would occasionally be woken up by an emergency bell because an elephant trampled down our fence and stomped into the school or hyenas were in school. During the Kenyan 'winter', we would  find snakes hibernating under our beds. Scary scenes. But it was alot fun in all honesty. I got to experience the rural lifestyle.  When water dried up we had to go fetch some from the river. I remember carrying my bucket of water on my head, cat walking, thinking I was  one of those Naija babes'-'. We also fetched firewood from the forest and we had to split it,&nbsp; ourselves, yes, nilijua  kukata kuni guys. You get the picture by now yeah. I met some interesting characters there too. When I was in class 7, my deckermate was a devil  worshipper guyssss. She would tell me how she sacrificed her nana and if you crossed her, she would wake up in the middle of the  night and cut you up. Like no jokes she would cut stab you ata kama ni mkono tu then tell you she did it. She was eventually expelled, thankfully.</p>
+<p class="style1">&nbsp;</p>
+<p align="center"> <class="style1"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-05-30 at 18.10.14.jpeg" alt="Image" style="width: 50%; height: auto;"></p>
+<p class="style2"> We had a student  council and I was the speaker.I was also the speaker of Tharaka Nithi county student council, which came with it's priviledges because heh, a whole Madam Speaker. I would attend council meetings and compete in national student council competitions. Najua haikai big deal sahi, but back then it was biggg,just imagine, a girl from a rural school, coming to Nairobi to compete to be a speaker. Anyways, as the speaker, I was automatically the headgirl. As headgirl, I had some privileges like eating what I want, dishing out punishments,having a study room and many more. So I used to bring my then bestfriend ,Jamal ,to my study room. We had a gang (Vivi,jamal, Alvin and I) , so we studied and hang out together alot. Tell me why one evening we were  called by the deputy and made to have a marriage ceremony, since we are  all dating. Eyyyyy, brother Bernard. She created a lot of unnecessary drama. That was one of the longest nights I've had. </p>
+<p align="center"> <class="style2"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-06-08 at 16.02.56.jpeg" alt="Image" style="width: 50%; height: auto;"></p>
+<p class="style2">This was during one of the school trips. So we did a district exam every term and the top 10 students in each class would go for a trip. Yeah yeah you know your girl is smart so I went on alllll trips. Then the school had a rule if your hair wasn't long enough to tie with a hairband you had to shave it like completely hence the bald headed Kish. </p>
+<p class="style2">Did I mention it was a mixed school? Heh the dramaaa!! Love Island season 8,Meru minor edition. It was drama all day everyday. I think that's the first time I saw girls fighting over a guy and vice versa. <br>
+I have a lot of  stories from my primary school I think I can write a novel about it </p>
+<p>&#128514;. </p>
+<p align="center"><img src="C:\Users\pc\Downloads\WhatsApp Image 2023-05-30 at 18.11.38.jpeg" alt="Image" style="width: 50%; height: auto;"></p> This was me after KCPE. Okrrrrr slayyyy babe. </p>
+<p>Anyway trust me, that school toughened me up in ways I never thought it would. </p>
+        <!-- Background section content -->
+    </section>
+    <section id="contact" class="content">
+        <h2>Contact</h2>
+        <p>Please feel free to contact me:</p>
+        <ul>
+            <li>Email:njmercy03@gmail.com</li>
+            <li>Phone: 0757050652</li>
+            <li>Address:buruburu phase 4, Nairobi</li>
+            <li>Co-designed by: adrianmwangi207@gmail.com</li>>
+            <li>Phone: 0728526106</li>
+        </ul>
+        <!-- Add your content here -->
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 My Personal Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

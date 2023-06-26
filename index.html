@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+  <style>
+        body {
+            height: 100vh; /* Set the height of the background */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #welcomePage {
+        background-image: url('https://static-cse.canva.com/blob/1060712/1600w-aQcc3TfAsJY.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #welcomeText {
+            font-family: Arial, sans-serif;
+            font-size: 72px;
+            font-weight: bold;
+            display: none;
+        }
+        .letter-red {
+        color: red;
+    }
+    
+    .letter-green {
+        color: green;
+    }
+    
+    .letter-blue {
+        color: blue;
+    }
+    
+    .letter-yellow {
+        color: yellow;
+    }
+    #loginForm {
+        background-image: url('https://bestoflife.com/wp-content/uploads/2019/01/Best-Vision-Board-Ideas-for-Goal-Setting.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        position: center;
+        top: 50%;
+        left: 0;
+        display: none;
+        z-index: 1;
+    }
+    
+    #loginFormContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+        form{
+        background-color: white;
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+        padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: #333333;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+            color: #666666;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            max-width: 250px;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: 1px solid #cccccc;
+        }
+        
+        input[type="submit"] {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 16px;
+            font-size: 16px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        /* Add your other CSS styles here */
+        .animated-word {
+            font-family: Arial, sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            color: #333333;
+            animation: fade 5s linear forwards;
+        }
+        
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        form {
+            display: none;
+            /* Add your form styles here */
+        }
+    </style>
+      <script>
+        setTimeout(function() {
+           document.getElementById("welcomeText").style.display = "block";
+       }, 2000);
+       setTimeout(function() {
+           document.getElementById("welcomePage").style.display = "none";
+           document.getElementById("loginForm").style.display = "block";
+       }, 5000);
+   </script>
+       <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var loginForm = document.getElementById('loginForm');
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+                
+                var usernameInput = document.getElementById('username');
+                var passwordInput = document.getElementById('password');
+                
+                var username = usernameInput.value;
+                var password = passwordInput.value;
+                
+                // Check login credentials
+                if ( password === '3632L32C') {
+                    alert('Login successful!');
+                    // Redirect to the main page or perform other actions
+                    window.location.href = 'index.html';
+                } else {
+                    alert('Invalid username or password. Please try again.');
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body>
+   
+    
+    <div id="welcomePage">
+        <h1 id="welcomeText">
+            <span class="letter-red">k</span>
+            <span class="letter-green">i</span>
+            <span class="letter-blue">s</span>
+            <span class="letter-yellow">h</span>
+        </h1>
+    </div>
+   
+    
+    <form id="loginForm">
+        <h1 style="display: none;">Log In</h1>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+        </div>
+        <div>
+            <input type="submit" value="Log In">
+        </div>
+    </form>
+  
+</body>
+</html>
